@@ -1,0 +1,17 @@
+{
+    "image2": {
+        "data": "hwQQABAAAAC7u7v7u7u7+1tVVfvLzMz7W1VV+8vMzPu7u7v7u7u7+8vMzPvLzMz7y8zM+8vMzPu7u7v7u7u7+///////////u7u7+7u7u/vLzMz7W1VV+8vMzPtbVVX7u7u7+7u7u/tbVVX7y8zM+1tVVfvLzMz7u7u7+7u7u/v//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "building2"
+    },
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8A8AAADwAADv/QAAAO//D///8A/w7t/97u7v/vDub/3u7v/+8O7f/e7u/w/w7m/97u7v/gDv/w////D+APAAAO/9AA8AAAAA8A8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
