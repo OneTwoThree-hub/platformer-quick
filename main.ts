@@ -18,6 +18,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, lo
     tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 10))
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath5, function (sprite, location) {
+    color.FadeToWhite.startScreenEffect(1000)
     game.over(false)
 })
 let jumpCount = 0
