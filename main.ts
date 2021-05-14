@@ -11,8 +11,13 @@ scene.onOverlapTile(SpriteKind.Player, assets.image`paintTwo`, function (sprite,
     tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 9))
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath5, function (sprite, location) {
-    color.FadeToWhite.startScreenEffect(1000)
-    game.over(false)
+    statusbar.value += -1000
+    pause(100)
+    if (statusbar.value <= 0) {
+        game.over(false)
+    } else {
+        color.FadeToWhite.startScreenEffect(1000)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.image`paintOne`, function (sprite, location) {
     tiles.setTilemap(tilemap`CityScape2`)
@@ -22,6 +27,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.image`paintThree`, function (sprit
     game.over(true)
 })
 let jumpCount = 0
+let statusbar: StatusBarSprite = null
 let mySprite: Sprite = null
 scene.setBackgroundColor(6)
 tiles.setTilemap(tilemap`CityScape`)
@@ -31,16 +37,31 @@ controller.moveSprite(mySprite, 100, 0)
 scene.cameraFollowSprite(mySprite)
 tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 9))
 mySprite.ay = 200
+let heart = sprites.create(assets.image`myImage2`, SpriteKind.Food)
+statusbar = statusbars.create(20, 4, StatusBarKind.Health)
+statusbar.value = 50
+statusbar.attachToSprite(mySprite, 0, 0)
+forever(function () {
+    mySprite.ay = 200
+})
 forever(function () {
     if (true) {
     	
     }
 })
 forever(function () {
-    mySprite.ay = 200
-})
-forever(function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
         jumpCount += 0
+    }
+})
+forever(function () {
+    if (mySprite.overlapsWith(heart)) {
+        statusbar.value += 1
+        info.changeLifeBy(1)
+    }
+})
+forever(function () {
+    if (mySprite.overlapsWith(heart)) {
+        statusbar.value += 1
     }
 })
