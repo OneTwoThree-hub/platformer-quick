@@ -7,7 +7,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     jumpCount = 0
 })
 scene.onOverlapTile(SpriteKind.Player, assets.image`paintTwo`, function (sprite, location) {
-    tiles.setTilemap(tilemap`City2`)
+    tiles.setTilemap(tilemap`CityScape2`)
     tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 9))
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath5, function (sprite, location) {
@@ -28,16 +28,19 @@ scene.onOverlapTile(SpriteKind.Player, assets.image`paintThree`, function (sprit
 })
 let jumpCount = 0
 let statusbar: StatusBarSprite = null
+let heart: Sprite = null
 let mySprite: Sprite = null
-scene.setBackgroundColor(6)
+scene.setBackgroundColor(1)
 tiles.setTilemap(tilemap`CityScape`)
 mySprite = sprites.create(assets.image`myImage1`, SpriteKind.Player)
+heart.setPosition(2, 1)
 info.setLife(1)
 controller.moveSprite(mySprite, 100, 0)
 scene.cameraFollowSprite(mySprite)
 tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 9))
 mySprite.ay = 200
-let heart = sprites.create(assets.image`myImage2`, SpriteKind.Food)
+heart = sprites.create(assets.image`myImage2`, SpriteKind.Food)
+heart.setPosition(Math.max(2, 14), 8)
 statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 statusbar.value = 50
 statusbar.attachToSprite(mySprite, 0, 0)

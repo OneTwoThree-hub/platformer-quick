@@ -136,41 +136,6 @@ b b 6 6 6 6 6 6 6 6 6 6 6 b b e
 . . f f f f . . f 4 f b . b . b 
 . f f f f f f . f f f b . . . b 
 `;
-            case "image4":
-            case "myImage1":return img`
-.....eeeeeee....
-....eeeeeeeee...
-...eeeeeeeeeee..
-..eeeeeeeeeeeee.
-..eeeeeeeeeeeee.
-..eeeedddddeeee.
-..eeed16d16deee.
-..eeedddddddeee.
-..eeedeeeeedeee.
-...eeeedddeeee..
-.....e11111e....
-....99e111e99...
-....99deeed99...
-...9199ddd9919..
-...99999d99999..
-...99999d99999..
-...99999999999..
-...999999999dd..
-...9dd999999dd..
-...ddd999999dd..
-...ddd999999dd..
-...eeefff99fde..
-...edeffffff.e..
-..e8eeefffff..e.
-..eee4efffff..e.
-..e6eee..fff..e.
-...eeef..fff..6.
-....fff..fff....
-....fff..fff....
-....fff..fff....
-....fff..fff....
-....ffff.ffff...
-`;
             case "image11":
             case "myImage5":return img`
 . . . . . . . . . . . . . . . . 
@@ -339,6 +304,60 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 . . . . . . 6 6 6 6 . . . . . . 
 . . . . . . . 6 6 . . . . . . . 
 . . . . . . . . . . . . . . . . 
+`;
+            case "image4":
+            case "myImage1":return img`
+.....eeeeeee....
+....eeeeeeeee...
+...eeeeeeeeeee..
+..eeeeeeeeeeeee.
+..eeeeeeeeeeeee.
+..eeeedddddeeee.
+..eeed16d16deee.
+..eeedddddddeee.
+..eeedeeeeedeee.
+...eeeedddeeee..
+.....e11111e....
+....99e111e99...
+....99deeed99...
+...9199ddd9919..
+...99999d99999..
+...99999d99999..
+...99999999999..
+...999999999dd..
+...9dd999999dd..
+...ddd999999dd..
+...ddd999999dd..
+...eeefff99fde..
+...edeffffff.e..
+..e8eeefffff..e.
+..eee4efffff..e.
+..ebeee..fff..e.
+...eeef..fff..4.
+....fff..fff....
+....fff..fff....
+....fff..fff....
+....fff..fff....
+....ffff.ffff...
+`;
+            case "image12":
+            case "myImage6":return img`
+. . . . . 7 7 7 7 . 7 . . . 7 7 
+7 . 7 . 7 7 7 7 . . 7 . 7 7 7 7 
+7 . 7 7 7 7 7 7 7 . 7 7 7 7 7 . 
+7 7 7 7 7 . 7 . 7 7 . 7 7 7 . . 
+. 7 7 . 7 . . 7 . 7 7 7 7 7 7 7 
+. 7 . . 7 7 . 7 . 7 . 7 7 . 7 7 
+7 . 7 . 7 . 7 . . . . 7 7 . 7 . 
+. 7 7 7 7 . 7 7 7 7 . 7 . . 7 7 
+. . 7 . 7 7 7 7 7 . . . 7 7 7 . 
+7 . 7 . 7 7 7 7 7 7 . . . 7 7 . 
+. 7 . . 7 7 7 . 7 7 7 7 . 7 . . 
+. 7 . 7 7 7 . . . . 7 7 7 7 7 7 
+7 . 7 7 7 7 . 7 7 7 . 7 7 . . . 
+7 7 7 . . 7 7 . 7 7 7 7 7 7 . 7 
+. 7 7 7 7 7 7 . . . 7 7 7 . . 7 
+7 7 7 7 7 7 . 7 7 . . . 7 . 7 7 
 `;
         }
         return null;
