@@ -359,6 +359,63 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 . 7 7 7 7 7 7 . . . 7 7 7 . . 7 
 7 7 7 7 7 7 . 7 7 . . . 7 . 7 7 
 `;
+            case "image14":
+            case "myImage8":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image13":
+            case "myImage7":return img`
+b b b b b b b b b b b b b b b b 
+b c c c c c c c c c c c c c c b 
+b c c c c c c c c c c c c c c b 
+b c c 1 1 1 1 c c 1 1 1 1 c c b 
+b c c 1 1 f f c c f f 1 1 c c b 
+b c c 1 1 f f c c f f 1 1 c c b 
+b c c 1 1 f f c c f f 1 1 c c b 
+b c c 1 1 f f c c f f 1 1 c c b 
+b c c 1 1 f f c c f f 1 1 c c b 
+b c c 1 1 1 1 c c 1 1 1 1 c c b 
+b c c c c c c c c c c c c c c b 
+b c c c c c c c c c c c c c c b 
+b c c c c c c c c c c c c c c b 
+b c c c c c c c b c c c c c c b 
+b c c c c c c c c c c c c c c b 
+b b b b b b b b b b b b b b b b 
+`;
+            case "#G!wosq#?/CJ#E;SC[]n":
+            case "No Asset Name":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
         }
         return null;
     })
