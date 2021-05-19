@@ -11,14 +11,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.image`paintTwo`, function (sprite,
     tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 9))
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath5, function (sprite, location) {
-    let statusbar: StatusBarSprite = null
-    statusbar.value += -1000
-    pause(100)
-    if (statusbar.value <= 0) {
-        game.over(false)
-    } else {
-        color.FadeToWhite.startScreenEffect(1000)
-    }
+	
 })
 scene.onOverlapTile(SpriteKind.Player, assets.image`paintOne`, function (sprite, location) {
     tiles.setTilemap(tilemap`CityScape2`)
