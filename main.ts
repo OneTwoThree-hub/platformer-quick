@@ -29,7 +29,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.image`paintThree`, function (sprit
 })
 let jumpCount = 0
 let mySprite: Sprite = null
-scene.setBackgroundColor(1)
+scene.setBackgroundColor(5)
 tiles.setTilemap(tilemap`01_level_One1`)
 mySprite = sprites.create(assets.image`myImage7`, SpriteKind.Player)
 info.setLife(1)
