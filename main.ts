@@ -10,7 +10,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.image`paintTwo`, function (sprite,
     tiles.setTilemap(tilemap`CityScape2`)
     tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 9))
 })
-scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath5, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile12`, function (sprite, location) {
 	
 })
 scene.onOverlapTile(SpriteKind.Player, assets.image`paintOne`, function (sprite, location) {
@@ -31,10 +31,10 @@ scene.cameraFollowSprite(mySprite)
 tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 9))
 mySprite.ay = 200
 forever(function () {
-    mySprite.ay = 200
-})
-forever(function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
         jumpCount += 0
     }
+})
+forever(function () {
+    mySprite.ay = 200
 })
