@@ -3,8 +3,6 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         jumpCount += 1
         mySprite.vy = -150
     }
-    pause(2000)
-    jumpCount = 0
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile12`, function (sprite, location) {
     statusbar.value += -10
@@ -20,6 +18,15 @@ let jumpCount = 0
 let statusbar: StatusBarSprite = null
 let mySprite: Sprite = null
 mySprite = sprites.create(assets.image`myImage7`, SpriteKind.Player)
+tiles.setTilemap(tilemap`01_level_One1`)
+info.setLife(1)
+controller.moveSprite(mySprite, 100, 0)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnTile(mySprite, tiles.getTileLocation(5.5, 6))
+mySprite.ay = 200
+statusbar = statusbars.create(20, 4, StatusBarKind.Health)
+statusbar.value = 100
+statusbar.positionDirection(CollisionDirection.Bottom)
 scene.setBackgroundImage(img`
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     2444444444444444444224444444444444444442244444444444444444422444444444444444444244444444444444444422444444444444444444224444444444444444442244444444444444444422
@@ -142,20 +149,11 @@ scene.setBackgroundImage(img`
     2424422222444444444424244222224444444444242442222244444444442424422222444444444242442222244444444442424422222444444444424244222224444444444242442222244444444442
     2424422444444444444424244224444444444444242442244444444444442424422444444444444242442244444444444442424422444444444444424244224444444444444242442244444444444442
     `)
-tiles.setTilemap(tilemap`01_level_One1`)
-info.setLife(1)
-controller.moveSprite(mySprite, 100, 0)
-scene.cameraFollowSprite(mySprite)
-tiles.placeOnTile(mySprite, tiles.getTileLocation(5.5, 6))
-mySprite.ay = 200
-statusbar = statusbars.create(20, 4, StatusBarKind.Health)
-statusbar.value = 100
-statusbar.positionDirection(CollisionDirection.Bottom)
 forever(function () {
     mySprite.ay = 200
 })
 forever(function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
-        jumpCount += 0
+        jumpCount = 0
     }
 })
