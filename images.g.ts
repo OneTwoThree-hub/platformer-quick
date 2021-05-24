@@ -399,22 +399,22 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 `;
             case "image13":
             case "myImage7":return img`
-b b b b b b b b b b b b b b b b 
-b c c c c c c c c c c c c c c b 
-b c c c c c c c c c c c c c c b 
-b c c 1 1 1 1 c c 1 1 1 1 c c b 
-b c c 1 1 f f c c f f 1 1 c c b 
-b c c 1 1 f f c c f f 1 1 c c b 
-b c c 1 1 f f c c f f 1 1 c c b 
-b c c 1 1 f f c c f f 1 1 c c b 
-b c c 1 1 f f c c f f 1 1 c c b 
-b c c 1 1 1 1 c c 1 1 1 1 c c b 
-b c c c c c c c c c c c c c c b 
-b c c c c c c c c c c c c c c b 
-b c c c c c c c c c c c c c c b 
-b c c c c c c c b c c c c c c b 
-b c c c c c c c c c c c c c c b 
-b b b b b b b b b b b b b b b b 
+bbbbbbbbbbbbbbbb..bbbbbbbbbbbbbbbb
+bccccccccccccccb..bccccccccccccccb
+bccccccccccccccb..bceeeeeeeeeeeeee
+bcc1111cc1111ccb..bce....cc....cce
+bcc11ffccff11ccb..bce....cc....cce
+bcc11ffccff11ccb..bce....cc....cce
+bcc11ffccff11ccb..bce....cc....cce
+bcc11ffccff11ccb..bce....cc....cce
+bcc11ffccff11ccb..bce....cc....cce
+bcc1111cc1111ccb..bce....cc....cce
+bccccccccccccccb..bcecccccccccccce
+bccccccccccccccb..bcecccccccccccce
+bccccccccccccccb..bcecccccccccccce
+bcccccccbccccccb..bcecccccbeccccce
+bccccccccccccccb..bcecccccccccccce
+bbbbbbbbbbbbbbbb..bbeeeeeeeeeeeeee
 `;
         }
         return null;
